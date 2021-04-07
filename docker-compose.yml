@@ -1,0 +1,7 @@
+version: "2.4"
+services:
+    icscalendarbot:
+        volumes:
+          - ./ :/home/loobson/TelegramBots/ical/users.db
+        build: .
+        restart: unless-stopped
